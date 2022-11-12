@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="039cd60b-3206-48c6-9ea4-452798e30afb" name="mpquicvm">
+        <fileTransfer accessType="SFTP" host="192.168.126.135" port="22" sshConfigId="a46fa4a5-b35a-40e7-a900-3a5a771c1f35" sshConfig="mininet@192.168.126.135:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
