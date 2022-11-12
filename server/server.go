@@ -20,6 +20,7 @@ import (
 
 // CHUNK size to read
 const CHUNK = 1024 * 10
+const checkgit = "checkgit"
 
 const flagpth string = "/home/mininet/peekaboo/flag1"
 
@@ -57,16 +58,12 @@ func server(addr string) {
 	//	bth, _ := strconv.ParseFloat(bthstr, 64)
 	//}
 
-
-
-
-
 	// Configure multipath
 	quicConfig := &quic.Config{
-		Flagpth: flagpth,
-		Missiontype: "back",
+		Flagpth:       flagpth,
+		Missiontype:   "back",
 		SchedulerName: "peek",
-		CreatePaths: true,
+		CreatePaths:   true,
 	}
 
 	listener, err := quic.ListenAddr(addr, generateTLSConfig(), quicConfig)
